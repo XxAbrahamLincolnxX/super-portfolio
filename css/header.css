@@ -8,6 +8,7 @@
     position: sticky;
     top: 0;
     height: 80px;
+    z-index: 2;
   }
   .header-left {
     justify-self: start;
