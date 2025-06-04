@@ -6,6 +6,7 @@
     padding: 5px;
     margin: 0;
     display: flex;
+    justify-content: space-between;
 }
 
 .site-header h1 {
@@ -19,7 +20,7 @@
 
 .hero-logo {
     color: white;
-    height: 40px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
     margin: 0 1rem;
     display: flex;
     align-items: center;
