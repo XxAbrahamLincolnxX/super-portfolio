@@ -1,33 +1,39 @@
-.hero-image {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/pawel-czerwinski-OY3slACa3ec-unsplash.jpg");
-
-    /* Set a specific height */
+.hero-wrapper {
+    position: relative;
     height: 50vh;
+    overflow: hidden;
+  }
   
-    /* Position and center the image to scale nicely on all screens */
-    background-attachment: fixed;
+  .hero-image {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                      url("/assets/images/pawel-czerwinski-OY3slACa3ec-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .hero-text {
     position: relative;
-    z-index: -100;
-}
-
-/* Place text in the middle of the image */
-.hero-text {
+    z-index: 1;
     text-align: center;
-    position: absolute;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    padding: 4em;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
-    background-color: rgba(0,0,0, 0.4);
-    backdrop-filter: blur(8px);
-    padding: 4em;
+    max-width: 50vh;
   }
-
+  
+  
   .hero-text h1 {
     font-size: 2em;
     font-weight: bold;
   }
+  

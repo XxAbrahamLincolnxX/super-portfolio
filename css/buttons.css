@@ -1,7 +1,18 @@
 .hero-button {
+    cursor: pointer;
+    pointer-events: auto;
+    z-index: 2; /* Extra layer just in case */
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.25rem;
+    background-color: #36719f;
+    color: white;
     text-decoration: none;
-    background: white;
-    color: black;
-   
-}
-
+    border-radius: 6px;
+    transition: background 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #a34c00;
+  }
+  
