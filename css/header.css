@@ -16,3 +16,14 @@
     margin-left: auto;
     padding: 10px;
 }
+
+.hero-logo {
+    color: white;
+    height: 40px; /* Adjust as needed */
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+  }
+  .hero-logo svg {
+    height: 100%;
+  }
