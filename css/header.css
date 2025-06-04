@@ -6,7 +6,7 @@
     padding: 5px;
     margin: 0;
     display: flex;
-    justify-items: flex-end;
+    align-items: end;
 }
 
 .site-header h1 {
