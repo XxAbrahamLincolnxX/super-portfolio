@@ -3,10 +3,10 @@
     color: white;
     position: sticky;
     top: 0;
-    padding: 5px;
+    padding: 0.5rem 1rem;
     margin: 0;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
 .site-header h1 {
@@ -18,12 +18,22 @@
     padding: 10px;
 }
 
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+  }
+  .header-nav a:hover {
+    text-decoration: underline;
+  }
+
 .hero-logo {
     color: white;
     height: 100px; /* Adjust as needed */
     margin: 0 1rem;
     display: flex;
     align-items: center;
+    overflow: hidden;
   }
   .hero-logo svg {
     height: 100%;
