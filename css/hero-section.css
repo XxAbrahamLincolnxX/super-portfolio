@@ -1,39 +1,44 @@
 .hero-wrapper {
-    position: relative;
-    height: 50vh;
-    overflow: hidden;
-  }
-  
-  .hero-image {
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                      url("/assets/images/pawel-czerwinski-OY3slACa3ec-unsplash.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  
-  .hero-text {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    color: white;
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 20px;
-    backdrop-filter: blur(8px);
-    padding: 4em;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 50vh;
-  }
-  
-  
-  .hero-text h1 {
-    font-size: 2em;
-    font-weight: bold;
-  }
-  
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/images/pawel-czerwinski-OY3slACa3ec-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 4em;
+  max-width: 50vh;
+  transition: transform 0.3s ease;
+}
+
+.hero-text:hover {
+  transform: translate(-50%, -50%) scale(1.02);
+}
+
+
+.hero-text h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
