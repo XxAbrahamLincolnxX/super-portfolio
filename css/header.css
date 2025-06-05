@@ -3,7 +3,7 @@
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     padding: 0.5rem 1rem;
-    background: rgb(136, 52, 52);
+    background: rgb(0, 0, 0);
     color: white;
     position: sticky;
     top: 0;
@@ -17,19 +17,37 @@
     justify-self: center;
   }
 
-/* Default: hidden nav for mobile */
-.topnav #header-nav {
-  display: none;
-  flex-direction: column;
-  background-color: #333;
-  position: absolute;
-  top: 100%;
-  right: 0;
+  .topnav #header-nav {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-10px); /* slightly above */
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0);
+    flex-direction: column;
+    width: 100vw;
+    text-align: right;
+    padding: 1rem;
+    z-index: 1;
+  }
+
+.topnav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Push contents (icon and menu) to the right */
   width: 100%;
+  position: relative;
+  height: 100%;
 }
 
 .topnav.show #header-nav {
-  display: flex;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0); /* drop down into place */
 }
 
 /* Style navigation menu links */
@@ -39,20 +57,22 @@
   text-decoration: none;
   font-size: 17px;
   display: block;
+  transition: background-color 0.3s ease, color 0.3s ease; /* ✅ Fade in/out */
+
 }
 
 /* Style the hamburger menu */
 .topnav a.icon {
-  display: block;
-  position: absolute;
+  display: flex;
+  position: relative;
   align-items: center;
-  right: 0;
-  top: 0;
+  margin-left: auto;
+  cursor: pointer;
 }
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  color: black;
+  color: rgb(50, 78, 178);
 }
 
 /* Style the active link (or home/logo) */
@@ -62,8 +82,8 @@
 }
 
   #header-nav {
-    justify-self: end;
-    padding: 10px;
+    align-items: flex-end;
+    padding-top: 20px;
   }
 
 .site-header h1 {
@@ -74,8 +94,28 @@
 #header-nav a {
     color: white;
     text-decoration: none;
-    margin-left: 1rem;
   }
+
+  #header-nav a {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  
+  /* When menu shows, animate each link in */
+  .topnav.show #header-nav a {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Staggered appearance */
+  .topnav.show #header-nav a:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+  .topnav.show #header-nav a:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  
   #header-nav a:hover {
     text-decoration: underline;
   }
