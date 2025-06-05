@@ -7,3 +7,14 @@ body {
     background-color: white;
     font-family: 'Noto Sans', sans-serif;
 }
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+p {
+    padding: 10px;
+}
