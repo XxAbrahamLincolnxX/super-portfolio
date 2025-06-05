@@ -1,12 +1,21 @@
+/* Ensure these are NOT being overridden later in the file */
 html {
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    background-color: white;
+    height: 100%;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: 'Noto Sans', sans-serif;
-}
+    background-color: white;
+  }
+  
+  /* This pushes the footer to the bottom if content is short */
+  .page-wrapper {
+    flex: 1;
+  }
+  
 
 h2 {
     font-size: 2em;
