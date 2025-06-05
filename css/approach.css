@@ -1,7 +1,23 @@
- #approach {
-    display: flex;
-    justify-content: center;
-    padding: 4em;
+#approach.section {
+    display: block;
+    color: white;
+    z-index: -1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                      url("/assets/images/brandon-vazquez-koC5eG6v6ew-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+ }
+ 
+ 
+ .content {
+    position: block;
+    max-width: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    
  }
 
- 
+
+
