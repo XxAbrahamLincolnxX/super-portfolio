@@ -11,7 +11,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    border: 1px solid rgb(109, 71, 71);
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 50%;
     z-index: 1;
   }
@@ -34,6 +34,7 @@
     height: 100%;
     animation: spin 12s linear infinite;
     transform-origin: center;
+    z-index: 2; /* <-- Add this */
   }
   
   .rocket {
@@ -44,6 +45,7 @@
     left: 50%;
     transform: translateX(-50%) rotate(95deg); /* faces forward along path */
     transform-origin: center;
+    z-index: 3; /* <-- Ensure it's above the orbit-path */
   }
   
   /* Orbit rotates around the planet */
