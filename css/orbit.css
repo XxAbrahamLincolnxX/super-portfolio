@@ -1,0 +1,54 @@
+.orbit-wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 2rem auto;
+  }
+  
+  .orbit-path {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(109, 71, 71);
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .planet {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  
+  .orbit {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: spin 12s linear infinite;
+    transform-origin: center;
+  }
+  
+  .rocket {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%) rotate(95deg); /* faces forward along path */
+    transform-origin: center;
+  }
+  
+  /* Orbit rotates around the planet */
+  @keyframes spin {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
