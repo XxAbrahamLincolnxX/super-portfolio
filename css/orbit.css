@@ -2,18 +2,43 @@
     position: relative;
     width: 200px;
     height: 200px;
-    margin: 0 auto 2rem auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   
-  .orbit-path {
+  .orbit {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: spin 5s linear infinite;
+    transform-origin: center;
+    z-index: 2;
+  }
+  
+  /* Orbit path that fades behind the rocket */
+  .faded-orbit {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    border: 1px solid rgb(255, 255, 255);
+    border: 2px solid white;
     border-radius: 50%;
     z-index: 1;
+    mask-image: conic-gradient(
+      rgba(0, 0, 0, 0) 0deg,
+      rgba(0, 0, 0, 0) 290deg,
+      rgba(0, 0, 0, 1) 360deg
+    );
+    
+    -webkit-mask-image: conic-gradient(
+        rgba(0, 0, 0, 0) 0deg,
+        rgba(0, 0, 0, 0) 290deg,
+        rgba(0, 0, 0, 1) 360deg
+      );
+
   }
   
   .planet {
@@ -25,16 +50,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
-  }
-  
-  .orbit {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    animation: spin 12s linear infinite;
-    transform-origin: center;
-    z-index: 2; /* <-- Add this */
+    z-index: 3;
   }
   
   .rocket {
@@ -43,12 +59,11 @@
     height: 60px;
     top: -30px;
     left: 50%;
-    transform: translateX(-50%) rotate(95deg); /* faces forward along path */
+    transform: translateX(-50%) rotate(80deg);
     transform-origin: center;
-    z-index: 3; /* <-- Ensure it's above the orbit-path */
+    z-index: 4;
   }
   
-  /* Orbit rotates around the planet */
   @keyframes spin {
     0%   { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
