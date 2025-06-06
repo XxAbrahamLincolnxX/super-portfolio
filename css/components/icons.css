@@ -1,17 +1,32 @@
+/* ===== Icon Containers ===== */
+
 .cell-split-container {
     width: 200px;
+    margin: 0 auto;
   }
-
+  
   .intentional-icon {
     width: 100%;
     max-width: 200px;
     margin: 0 auto;
   }
   
-  .intentional-icon svg {
+  .fingerprint-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  
+  /* ===== SVG Styling ===== */
+  
+  .intentional-icon svg,
+  .cell-split-container svg,
+  .fingerprint-icon {
+    display: block;
     width: 100%;
     height: auto;
-    display: block;
+    fill: white;
   }
   
   .intentional-icon .intent-line {
@@ -26,17 +41,8 @@
     fill: white;
   }
   
-  .fingerprint-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-  }
   .fingerprint-icon {
-    display: block;
-    align-items: center;
-    width: auto;
     height: 100px;
-    fill: white;
+    align-items: center;
   }
   

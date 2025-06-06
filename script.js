@@ -1,12 +1,14 @@
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
-    const topnav = document.querySelector('.topnav');
-    const icon = document.querySelector('.icon');
+// Toggle mobile menu visibility
+function toggleMenu() {
+    const nav = document.querySelector('.topnav');
+    const toggleButton = document.querySelector('.menu-toggle');
   
-    topnav.classList.toggle('show');
+    if (!nav || !toggleButton) return;
   
-    // Update aria-expanded
-    const expanded = icon.getAttribute('aria-expanded') === 'true';
-    icon.setAttribute('aria-expanded', !expanded);
+    nav.classList.toggle('show');
+  
+    // Toggle aria-expanded attribute for accessibility
+    const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true';
+    toggleButton.setAttribute('aria-expanded', String(!isExpanded));
   }
   

@@ -1,0 +1,23 @@
+/* ===== About Section ===== */
+
+#about.section {
+    background-color: #fff;
+    color: #111;
+    text-align: center;
+  }
+  
+  #about .content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  #about h2 {
+    margin-bottom: 1rem;
+  }
+  
+  #about p {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0.5rem 0;
+  }
+  

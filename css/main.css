@@ -1,29 +1,40 @@
-/* Ensure these are NOT being overridden later in the file */
-html {
-    height: 100%;
+/* ===== Main Layout ===== */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    min-height: 100vh;
+    background-color: white;
+    overflow-x: hidden;
   }
   
-  body {
-    min-height: 100vh;
+  .page-wrapper {
     display: flex;
     flex-direction: column;
-    font-family: 'Noto Sans', sans-serif;
-    background-color: white;
+    min-height: 100vh;
   }
   
-  /* This pushes the footer to the bottom if content is short */
-  .page-wrapper {
-    flex: 1;
-  }
-  
-
-h2 {
+  /* Typography */
+  h2 {
     font-size: 2em;
     font-weight: bold;
-    padding: 10px;
+    padding: 1rem 0;
     text-transform: uppercase;
-}
-
-p {
-    padding: 10px;
-}
+  }
+  
+  p {
+    padding: 0.5rem 0;
+    line-height: 1.6;
+  }
+  
+  /* Section Padding */
+  .section {
+    padding: 4rem 1.5rem;
+  }
+  
+  .section .content {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
