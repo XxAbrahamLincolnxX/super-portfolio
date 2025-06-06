@@ -11,10 +11,9 @@
     background-size: cover;
     background-attachment: fixed;
     color: white;
-  }
-  
-  /* Shared content wrapper */
-  #approach .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
   }
 
@@ -81,6 +80,15 @@
   }
   
   /* Process Container */
+
+  #my-process {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    margin-top: 2rem;
+  }
+
   .process-container {
     background-color: rgb(157, 29, 29);
     padding: 2rem 1rem;
@@ -92,13 +100,12 @@
     margin-top: 2rem;
   }
   
-  .process {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-  }
+.process {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
   
   .process h3 {
     text-transform: uppercase;
