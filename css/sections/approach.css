@@ -1,0 +1,107 @@
+/* ===== Approach Section ===== */
+
+#approach.section {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url("/assets/images/brandon-vazquez-koC5eG6v6ew-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+  }
+  
+  /* Shared content wrapper */
+  #approach .content {
+    text-align: center;
+  }
+  
+  /* Exploration Orbit */
+  .orbit-wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 2rem auto;
+  }
+  
+  .orbit {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: spin 5s linear infinite;
+    transform-origin: center;
+    z-index: 2;
+  }
+  
+  .faded-orbit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 50%;
+    mask-image: conic-gradient(
+      rgba(0, 0, 0, 0) 0deg,
+      rgba(0, 0, 0, 0) 290deg,
+      rgba(0, 0, 0, 1) 360deg
+    );
+    -webkit-mask-image: conic-gradient(
+      rgba(0, 0, 0, 0) 0deg,
+      rgba(0, 0, 0, 0) 290deg,
+      rgba(0, 0, 0, 1) 360deg
+    );
+    z-index: 1;
+  }
+  
+  .planet {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+  }
+  
+  .rocket {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%) rotate(80deg);
+    transform-origin: center;
+    z-index: 4;
+  }
+  
+  /* Process Container */
+  .process-container {
+    background-color: rgb(157, 29, 29);
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+  }
+  
+  .process-container h2 {
+    margin-top: 2rem;
+  }
+  
+  .process {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .process h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  

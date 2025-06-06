@@ -1,13 +1,17 @@
-.hero-wrapper {
+/* ===== Hero Section ===== */
+
+.hero-section {
   position: relative;
   height: 50vh;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-image {
   position: absolute;
   inset: 0;
-  z-index: -1;
   background: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/assets/images/pawel-czerwinski-OY3slACa3ec-unsplash.jpg");
@@ -15,30 +19,33 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  z-index: -1;
 }
 
 .hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
   text-align: center;
   color: white;
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(8px);
   border-radius: 20px;
   padding: 4em;
-  max-width: 50vh;
+  max-width: 600px;
+  z-index: 1;
   transition: transform 0.3s ease;
 }
 
 .hero-text:hover {
-  transform: translate(-50%, -50%) scale(1.02);
+  transform: scale(1.02);
 }
-
 
 .hero-text h1 {
   font-size: 2em;
   font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
 }

@@ -1,0 +1,119 @@
+/* ===== Header Layout ===== */
+
+.site-header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #000;
+  color: white;
+  position: sticky;
+  top: 0;
+  height: 80px;
+  z-index: 100;
+}
+
+/* Optional title text — hidden by default */
+.site-logo {
+  font-size: 1.5rem;
+  display: none; /* Show if needed */
+}
+
+/* SVG Logo Link */
+.logo-link {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  color: white;
+  transition: color 0.3s ease;
+  z-index: 101;
+}
+
+.logo-link .cls-1 {
+  fill: currentColor;
+}
+
+.logo-link {
+  border: 1px solid red; /* Temporary to confirm size/position */
+}
+.logo-link:hover {
+  color: #ffd000;
+}
+
+.logo-svg svg {
+  height: 100%;
+  width: auto;
+}
+
+/* ===== Navigation ===== */
+
+.topnav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  position: relative;
+}
+
+.menu a {
+  color: white;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #ffd000;
+}
+
+/* Menu toggle button (hamburger) */
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  margin-left: auto;
+  cursor: pointer;
+  color: white;
+}
+
+/* ===== Responsive Dropdown Menu ===== */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.95);
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100vw;
+  text-align: right;
+  padding: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  z-index: 1;
+}
+
+.topnav.show .menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.topnav.show .menu a {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered animation if desired */
+.topnav.show .menu a:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.topnav.show .menu a:nth-child(2) {
+  transition-delay: 0.2s;
+}

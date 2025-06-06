@@ -1,9 +1,12 @@
+/* ===== Footer Layout ===== */
+
 .site-footer {
     background-color: #111;
     color: #eee;
     padding: 2rem 1rem;
     text-align: center;
     font-size: 0.9rem;
+    margin-top: auto;
   }
   
   .footer-content {
@@ -12,12 +15,15 @@
   }
   
   .footer-links {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
   }
   
   .footer-links a {
     color: #aaa;
-    margin: 0 0.75rem;
     text-decoration: none;
     transition: color 0.3s ease;
   }
