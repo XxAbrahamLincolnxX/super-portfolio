@@ -1,0 +1,42 @@
+.cell-split-container {
+    width: 200px;
+  }
+
+  .intentional-icon {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  
+  .intentional-icon svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .intentional-icon .intent-line {
+    stroke: white;
+    stroke-width: 2;
+    fill: none;
+  }
+  
+  .intentional-icon .intent-arrow {
+    stroke: white;
+    stroke-width: 3;
+    fill: white;
+  }
+  
+  .fingerprint-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  .fingerprint-icon {
+    display: block;
+    align-items: center;
+    width: auto;
+    height: 100px;
+    fill: white;
+  }
+  

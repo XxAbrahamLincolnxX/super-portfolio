@@ -29,10 +29,27 @@
 }
 
 #my-process {
-   margin-top: 20px;
-   margin-bottom: 20px;
-  background: #ffd000;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   justify-content: center;
+   align-items: center;
+
 }
+
+
+.process {
+   display: grid;
+   grid-template-rows: 1fr 3fr;
+   justify-content: center;
+   align-items: center;
+}
+
+.process h3 {
+   text-transform: uppercase;
+   font-weight: bold;
+   margin-top: 3em;
+}
+
 
 
 
