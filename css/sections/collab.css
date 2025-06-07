@@ -1,0 +1,27 @@
+#collab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("/assets/images/star_background.png");
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    background-color: black;
+    z-index: -100;
+    color: white;
+}
+
+#collab h2 {
+    font-size: 4em;
+}
+
+#collab p {
+    font-size: 1.5em;
+    margin-left:auto;
+    margin-right: auto;
+    line-height: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
