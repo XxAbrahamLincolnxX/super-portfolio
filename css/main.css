@@ -28,10 +28,7 @@ html, body {
     line-height: 1.6;
   }
   
-  /* Section Padding */
-  .section {
-    padding: 4rem 1.5rem;
-  }
+
   
   .section .content {
     max-width: 960px;

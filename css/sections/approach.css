@@ -1,6 +1,6 @@
 /* ===== Approach Section ===== */
 
-#approach.section {
+#approach.section, p {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.6),
         rgba(0, 0, 0, 0.6)
@@ -15,6 +15,13 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  #exploration p {
+    font-size: 1.2em;
+    background: grey;
+    padding: 20px 20px 20px 20px;
+
   }
 
   
