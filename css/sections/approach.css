@@ -60,7 +60,9 @@
   }
 
   .process-container {
-    background-color: rgb(157, 29, 29);
+    background: linear-gradient(-45deg, #140c2a, #272727, #380e3d, #131313);
+    background-size: 300% 300%;
+    animation: gradient 10s ease-in-out infinite;
     padding: 2rem 1rem;
     border-radius: 8px;
     margin-top: 2rem;
