@@ -1,15 +1,10 @@
 /* ===== Approach Section ===== */
 
-#approach.section, p {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6)
-      ),
-      url("/assets/images/brandon-vazquez-koC5eG6v6ew-unsplash.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+#approach, p {
+    background:
+    linear-gradient(217deg, rgba(255, 0, 102, 0.8), rgba(0, 174, 255, 0.641) 70.71%),
+    linear-gradient(127deg, rgb(89, 255, 0), rgba(0, 255, 0, 0.724) 70.71%),
+    linear-gradient(336deg, rgb(0, 0, 255), rgba(0, 0, 255, 0.063) 70.71%);
     color: white;
     display: flex;
     justify-content: center;
