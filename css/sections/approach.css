@@ -1,6 +1,6 @@
 /* ===== Approach Section ===== */
 
-#approach, p {
+#approach {
     background:
     linear-gradient(217deg, rgba(255, 0, 102, 0.8), rgba(0, 174, 255, 0.641) 70.71%),
     linear-gradient(127deg, rgb(89, 255, 0), rgba(0, 255, 0, 0.724) 70.71%),
@@ -12,75 +12,28 @@
     text-align: center;
   }
 
+  .spacer {
+    height: 50vh
+  }
+
   #exploration p {
-    font-size: 1.2em;
-    background: grey;
-    padding: 20px 20px 20px 20px;
-
+    font-size: 1.5em;
+    margin-left:auto;
+    margin-right: auto;
+    line-height: 2em;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
 
-  
-  /* Exploration Orbit */
-  .orbit-wrapper {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin: 2rem auto;
+  #exploration h2 {
+    font-size: 4em;
+    padding-top: 4em;
+    margin-left: 20%;
+    margin-right: 20%;
   }
-  
-  .orbit {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    animation: spin 5s linear infinite;
-    transform-origin: center;
-    z-index: 2;
-  }
-  
-  .faded-orbit {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 2px solid white;
-    border-radius: 50%;
-    mask-image: conic-gradient(
-      rgba(0, 0, 0, 0) 0deg,
-      rgba(0, 0, 0, 0) 290deg,
-      rgba(0, 0, 0, 1) 360deg
-    );
-    -webkit-mask-image: conic-gradient(
-      rgba(0, 0, 0, 0) 0deg,
-      rgba(0, 0, 0, 0) 290deg,
-      rgba(0, 0, 0, 1) 360deg
-    );
-    z-index: 1;
-  }
-  
-  .planet {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: white;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-  }
-  
-  .rocket {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: -30px;
-    left: 50%;
-    transform: translateX(-50%) rotate(80deg);
-    transform-origin: center;
-    z-index: 4;
-  }
-  
+
   /* Process Container */
 
   #my-process {
@@ -117,7 +70,26 @@
     font-weight: bold;
     margin-bottom: 1rem;
   }
-  
+
+  .logo-svg-hero {
+    max-width: 70vh;
+    margin-top: 2em;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    padding: 4em;
+    fill: white;
+    opacity: 0;
+  }
+
+  .logo-svg-hero:hover {
+    opacity: 1;
+  }
+
+  .explore-tag {
+    color: red;
+  }
+
  /* On screens that are 600px or less, set the background color to olive */
 @media screen and (min-width: 900px) {
    #my-process {
