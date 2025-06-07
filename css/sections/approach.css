@@ -9,6 +9,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    z-index: 0;
   }
 
   @keyframes gradient {
@@ -94,12 +95,8 @@
     opacity: 0;
   }
 
-  .logo-svg-hero:hover {
-    opacity: 1;
-  }
-
   .explore-tag {
-    color: red;
+    color: #ffd000;
   }
 
  /* On screens that are 600px or less, set the background color to olive */
