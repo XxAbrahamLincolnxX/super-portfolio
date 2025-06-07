@@ -26,8 +26,6 @@
 .hero-text {
   text-align: center;
   color: white;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(8px);
   border-radius: 20px;
   padding: 4em;
   max-width: 600px;
@@ -40,13 +38,15 @@
 }
 
 .hero-text h1 {
-  font-size: 2em;
+  font-size: 3em;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
 .hero-text p {
-  font-size: 1rem;
+  background: none;
+  font-size: 1.5rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
