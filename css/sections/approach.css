@@ -1,28 +1,25 @@
 /* ===== Approach Section ===== */
 
 #approach {
-    background: linear-gradient(-45deg, #ff6a3d, #ff3180, #1bc2ff, #2bffce);
-	background-size: 300% 300%;
-	animation: gradient 5s ease-in-out infinite;
+     background-image: 
+      url("/assets/images/star_background.png"),
+      linear-gradient(0deg, #0c2437, #060e27, #1c5e76, #2fd2ac);
+  
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover, 500% 100%; /* wider gradient for scrolling */
+    background-position: center, 0% 0%;
+  
+    animation: gradient 30s linear infinite;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    z-index: 0;
+    z-index: -100;
   }
 
-  @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
+
 
 
   .spacer {

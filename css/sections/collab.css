@@ -1,24 +1,34 @@
-#collab {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  
-    background-image: 
-      url("/assets/images/star_background.png"),
-      linear-gradient(0deg, #0c2437, #060e27, #1c5e76, #2fd2ac);
-  
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-size: cover, 500% 100%; /* wider gradient for scrolling */
-    background-position: center, 0% 0%;
-  
-    animation: gradient 30s linear infinite;
-  
-    z-index: -100;
-    color: white;
+@keyframes backgroundScrollParallax {
+  0% {
+    background-position: center 0%, 0% 0%;
   }
+  100% {
+    background-position: center 200%, 0% 0%;
+  }
+}
 
+#collab {
+  background-image: 
+    url("/assets/images/star_background.png"),
+    linear-gradient(-45deg, #0c2437, #060e27, #124c61, #461e45);
+
+  background-attachment: scroll, fixed; /* image scrolls, gradient stays */
+  background-repeat: repeat-y, no-repeat;
+  background-size: cover, 500% 100%;
+  background-position: center 0%, 0% 0%;
+
+  animation: backgroundScrollParallax 120s linear infinite;
+
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: -100;
+}
+
+  
+  
 #collab h2 {
     font-size: 4em;
 }
