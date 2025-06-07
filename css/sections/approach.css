@@ -89,11 +89,14 @@
   /* Process Container */
 
   #my-process {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
+    display:block;
+    float: inherit;
     justify-items: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-right: 20%;
+    margin-left: 20%;
+
   }
 
   .process-container {
@@ -120,3 +123,10 @@
     margin-bottom: 1rem;
   }
   
+ /* On screens that are 600px or less, set the background color to olive */
+@media screen and (min-width: 900px) {
+   #my-process {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   } 
+}
