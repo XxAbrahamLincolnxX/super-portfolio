@@ -1,16 +1,28 @@
 /* ===== Approach Section ===== */
 
 #approach {
-    background:
-    linear-gradient(217deg, rgba(255, 0, 102, 0.8), rgba(0, 174, 255, 0.641) 70.71%),
-    linear-gradient(127deg, rgb(89, 255, 0), rgba(0, 255, 0, 0.724) 70.71%),
-    linear-gradient(336deg, rgb(0, 0, 255), rgba(0, 0, 255, 0.063) 70.71%);
+    background: linear-gradient(-45deg, #ff6a3d, #ff3180, #1bc2ff, #2bffce);
+	background-size: 300% 300%;
+	animation: gradient 5s ease-in-out infinite;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
+
+  @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
   .spacer {
     height: 50vh
