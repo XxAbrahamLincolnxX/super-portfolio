@@ -4,7 +4,7 @@
   position: relative;
   width: 200px;
   height: 200px;
-  margin: 2rem auto;
+  margin: 20vh auto;
 }
 
 /* ===== Orbit Path (rotation animation container) ===== */
@@ -43,19 +43,21 @@
   );
 }
 
-/* ===== Centered Planet ===== */
+/* ===== Centered Planet Variants (Rocky Blob Shapes) ===== */
 
 .planet {
   position: absolute;
-  width: 40px;
-  height: 40px;
-  background: white;
-  border-radius: 50%;
   top: 50%;
   left: 50%;
+  width: 50px;
+  height: 50px;
   transform: translate(-50%, -50%);
   z-index: 3;
+  opacity: 1;
+  /*animation: planetCycle 8s infinite;*/
 }
+
+
 
 /* ===== Rocket Icon on Orbit Path ===== */
 
