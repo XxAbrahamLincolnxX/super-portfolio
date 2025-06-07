@@ -50,3 +50,17 @@
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
 }
+
+@media (max-width: 500px) {
+
+  .hero-text h1 {
+    font-size: 1.5em;
+    margin-top: 2em;
+  }
+
+  .hero-text p {
+    font-size: 1em;
+  }
+
+  
+}

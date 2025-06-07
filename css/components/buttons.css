@@ -26,3 +26,11 @@
   background-color: #a34c00;
   transform: scale(1.03);
 }
+
+
+@media (max-width: 500px) {
+  .hero-button {
+    max-width: 20vh;
+    font-size: 1em;
+  }
+}
