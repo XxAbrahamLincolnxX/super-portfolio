@@ -1,91 +1,52 @@
 /* ===== Approach Section ===== */
 
-#approach.section, p {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6)
-      ),
-      url("/assets/images/brandon-vazquez-koC5eG6v6ew-unsplash.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+#approach {
+    background: linear-gradient(-45deg, #ff6a3d, #ff3180, #1bc2ff, #2bffce);
+	background-size: 300% 300%;
+	animation: gradient 5s ease-in-out infinite;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    z-index: 0;
+  }
+
+  @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+  .spacer {
+    height: 50vh
   }
 
   #exploration p {
-    font-size: 1.2em;
-    background: grey;
-    padding: 20px 20px 20px 20px;
-
+    font-size: 1.5em;
+    margin-left:auto;
+    margin-right: auto;
+    line-height: 2em;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
 
-  
-  /* Exploration Orbit */
-  .orbit-wrapper {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin: 2rem auto;
+  #exploration h2 {
+    font-size: 4em;
+    padding-top: 4em;
+    margin-left: 20%;
+    margin-right: 20%;
   }
-  
-  .orbit {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    animation: spin 5s linear infinite;
-    transform-origin: center;
-    z-index: 2;
-  }
-  
-  .faded-orbit {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 2px solid white;
-    border-radius: 50%;
-    mask-image: conic-gradient(
-      rgba(0, 0, 0, 0) 0deg,
-      rgba(0, 0, 0, 0) 290deg,
-      rgba(0, 0, 0, 1) 360deg
-    );
-    -webkit-mask-image: conic-gradient(
-      rgba(0, 0, 0, 0) 0deg,
-      rgba(0, 0, 0, 0) 290deg,
-      rgba(0, 0, 0, 1) 360deg
-    );
-    z-index: 1;
-  }
-  
-  .planet {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: white;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-  }
-  
-  .rocket {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: -30px;
-    left: 50%;
-    transform: translateX(-50%) rotate(80deg);
-    transform-origin: center;
-    z-index: 4;
-  }
-  
+
   /* Process Container */
 
   #my-process {
@@ -122,7 +83,22 @@
     font-weight: bold;
     margin-bottom: 1rem;
   }
-  
+
+  .logo-svg-hero {
+    max-width: 70vh;
+    margin-top: 2em;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    padding: 4em;
+    fill: white;
+    opacity: 0;
+  }
+
+  .explore-tag {
+    color: #ffd000;
+  }
+
  /* On screens that are 600px or less, set the background color to olive */
 @media screen and (min-width: 900px) {
    #my-process {

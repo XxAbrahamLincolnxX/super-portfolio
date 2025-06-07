@@ -4,7 +4,7 @@
   position: relative;
   width: 200px;
   height: 200px;
-  margin: 2rem auto;
+  margin: 20vh auto;
 }
 
 /* ===== Orbit Path (rotation animation container) ===== */
@@ -43,7 +43,6 @@
   );
 }
 
-/* ===== Centered Planet ===== */
 
 .planet {
   position: absolute;
@@ -56,6 +55,8 @@
   transform: translate(-50%, -50%);
   z-index: 3;
 }
+
+
 
 /* ===== Rocket Icon on Orbit Path ===== */
 
