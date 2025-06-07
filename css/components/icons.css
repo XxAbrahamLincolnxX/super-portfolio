@@ -2,13 +2,14 @@
 
 .cell-split-container {
     width: 200px;
-    margin: 0 auto;
+    align-items: center;
+    background: linear-gradient();
   }
   
   .intentional-icon {
     width: 100%;
     max-width: 200px;
-    margin: 0 auto;
+    margin-top: 2em;
   }
   
   .fingerprint-container {
@@ -44,5 +45,6 @@
   .fingerprint-icon {
     height: 100px;
     align-items: center;
+    margin-top: 2em;
   }
   
