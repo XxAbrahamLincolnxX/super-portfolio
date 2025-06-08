@@ -1,16 +1,7 @@
 /* ===== Approach Section ===== */
 
 #approach {
-  background-image: 
-    url("/assets/images/star_background.png"),
-    linear-gradient(124deg,rgba(19, 46, 84, 1) 0%, rgba(55, 44, 87, 1) 50%, rgba(97, 32, 32, 1) 100%);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover, 100% 100%; /* Image: cover | Gradient: wide horizontal scroll */
-  background-position: center, 0% 0%;
-  animation: gradient 30s linear infinite;
   color: white;
-  width: 100vw;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -18,19 +9,10 @@
   text-align: center;
 }
 
+
+
 .spacer {
   height: 20vh;
-}
-
-/* ===== Exploration Section ===== */
-
-#exploration h2 {
-  font-size: 4em;
-}
-
-#exploration p {
-  font-size: 1.5em;
-  line-height: 2em;
 }
 
 /* ===== Process Section ===== */
@@ -72,18 +54,7 @@ padding-top: 50px;
   margin-bottom: 1rem;
 }
 
-/* ===== Logo SVG ===== */
 
-.logo-svg-hero {
-  max-width: 70vh;
-  margin-top: 2em;
-  justify-self: center;
-  display: flex;
-  align-items: center;
-  padding: 4em;
-  fill: white;
-  opacity: 0;
-}
 
 /* ===== Tag Styling ===== */
 

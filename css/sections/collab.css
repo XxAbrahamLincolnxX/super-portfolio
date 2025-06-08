@@ -1,24 +1,13 @@
-@keyframes backgroundScrollParallax {
+/* @keyframes backgroundScrollParallax {
   0% {
     background-position: center 0%, 0% 0%;
   }
   100% {
     background-position: center 200%, 0% 0%;
   }
-}
+} */
 
 #collab {
-  background-image: 
-    url("/assets/images/star_background.png"),
-    linear-gradient(124deg,rgba(19, 46, 84, 1) 0%, rgba(55, 44, 87, 1) 50%, rgba(97, 32, 32, 1) 100%);
-
-  background-attachment: scroll, fixed; /* image scrolls, gradient stays */
-  background-repeat: repeat-y, no-repeat;
-  background-size: cover, 100% 100%;
-  background-position: center 0%, 0% 0%;
-
-  animation: backgroundScrollParallax 120s linear infinite;
-
   color: white;
   display: flex;
   justify-content: center;
