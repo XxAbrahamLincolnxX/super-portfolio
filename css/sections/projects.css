@@ -1,0 +1,17 @@
+
+.hero-section-project {
+    position: relative;
+    z-index: 0;
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+.project-container {
+    height: 100%;
+    padding: 10% 20%;
+    background: black;
+}
