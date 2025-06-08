@@ -3,10 +3,10 @@
 #approach {
   background-image: 
     url("/assets/images/star_background.png"),
-    linear-gradient(0deg, #0c2437, #060e27, #1c5e76, #2fd2ac);
+    linear-gradient(124deg,rgba(19, 46, 84, 1) 0%, rgba(55, 44, 87, 1) 50%, rgba(97, 32, 32, 1) 100%);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover, 500% 100%; /* Image: cover | Gradient: wide horizontal scroll */
+  background-size: cover, 100% 100%; /* Image: cover | Gradient: wide horizontal scroll */
   background-position: center, 0% 0%;
   animation: gradient 30s linear infinite;
   color: white;
@@ -88,7 +88,9 @@ padding-top: 50px;
 /* ===== Tag Styling ===== */
 
 .explore-tag {
-  color: #ffd000;
+  background: -webkit-linear-gradient(#3aff82, #36e8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* ===== Responsive ===== */
