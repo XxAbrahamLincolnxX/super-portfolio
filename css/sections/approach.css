@@ -1,115 +1,91 @@
 /* ===== Approach Section ===== */
 
 #approach {
-     background-image: 
-      url("/assets/images/star_background.png"),
-      linear-gradient(0deg, #0c2437, #060e27, #1c5e76, #2fd2ac);
-  
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover, 500% 100%; /* wider gradient for scrolling */
-    background-position: center, 0% 0%;
-  
-    animation: gradient 30s linear infinite;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: -100;
-  }
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 
 
+.spacer {
+  height: 20vh;
+}
 
-  .spacer {
-    height: 20vh
-  }
+/* ===== Process Section ===== */
 
-  #exploration p {
-    font-size: 1.5em;
-    margin-left:auto;
-    margin-right: auto;
-    line-height: 2em;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-top: 2em;
-    padding-bottom: 2em;
-  }
+#my-process {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 4rem 0;
+  padding: 0 20%;
+}
 
-  #exploration h2 {
-    font-size: 4em;
-    padding-top: 4em;
-    margin-left: 20%;
-    margin-right: 20%;
-  }
+.process-container {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  max-width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  /* Process Container */
+.process-container h2 {
+padding-top: 50px;
+}
 
-  #my-process {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    margin-right: 20%;
-    margin-left: 20%;
+.process-container p {
+  padding: 0 20%;
+  padding-bottom: 50px;
+}
 
-  }
-
-  .process-container {
-    background: linear-gradient(-45deg, #140c2a, #272727, #380e3d, #131313);
-    background-size: 300% 300%;
-    animation: gradient 10s ease-in-out infinite;
-    padding: 2rem 1rem;
-    border-radius: 8px;
-    margin-top: 2rem;
-  }
-  
-  .process-container h2 {
-    margin-top: 2rem;
-  }
-  
 .process {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-  
-  .process h3 {
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
 
-  .logo-svg-hero {
-    max-width: 70vh;
-    margin-top: 2em;
-    justify-self: center;
-    display: flex;
-    align-items: center;
-    padding: 4em;
-    fill: white;
-    opacity: 0;
-  }
+.process h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
 
-  .explore-tag {
-    color: #ffd000;
-  }
+
+
+/* ===== Tag Styling ===== */
+
+.explore-tag {
+  background: -webkit-linear-gradient(#3aff82, #36e8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===== Responsive ===== */
 
 @media (max-width: 500px) {
-   #my-process {
+  #my-process {
     display: block;
-   } 
+  }
 
-   #exploration h2 {
+  .process-container {
+    max-width: 100vw;
+    background: none;
+    backdrop-filter: none;
+  }
+
+  .process-container p {
+    padding-bottom: 2em;
+  }
+
+  #exploration h2 {
     font-size: 1.5em;
-   }
+  }
 
-   #exploration p {
+  #exploration p {
     font-size: 1em;
-    padding-left: 50px;
-    padding-right: 50px;
-   }
-
+  }
 }

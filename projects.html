@@ -1,28 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Asa Design</title>
+
+  <!-- CSS Imports -->
   <link rel="stylesheet" href="/css/reset.css" />
   <link rel="stylesheet" href="/css/main.css" />
-  <link rel="stylesheet" href="/css/header.css" />
-  <link rel="stylesheet" href="/css/buttons.css" />
-  <link rel="stylesheet" href="/css/cards.css" /> 
-  <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Noto+Sans:regular,bold">
+
+  <!-- Layout -->
+  <link rel="stylesheet" href="/css/layout/header.css" />
+  <link rel="stylesheet" href="/css/layout/footer.css" />
+
+  <!-- Sections -->
+  <link rel="stylesheet" href="/css/sections/hero.css" />
+  <link rel="stylesheet" href="/css/sections/approach.css" />
+  <link rel="stylesheet" href="/css/sections/services.css" />
+  <link rel="stylesheet" href="/css/sections/collab.css" />
+  <link rel="stylesheet" href="/css/sections/rates.css" />
+  <link rel="stylesheet" href="/css/sections/about.css" />
+  <link rel="stylesheet" href="/css/sections/contact.css" />
+  <link rel="stylesheet" href="/css/sections/projects.css" />
+
+  <!-- Components -->
+  <link rel="stylesheet" href="/css/components/buttons.css" />
+  <link rel="stylesheet" href="/css/components/cards.css" />
+  <link rel="stylesheet" href="/css/components/icons.css" />
+  <link rel="stylesheet" href="/css/components/orbit.css" />
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:regular,bold" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
+
 <body>
+  <div class="page-wrapper">
 
-  <!--HEADER-->
-  <header class="site-header">
+   <!-- Header -->
+   <header class="site-header">
+    <!-- Left: Optional text logo -->
     <div class="header-left">
-      <h1 class="logo">Asa Jernigan</h1>
+      <h1 class="site-logo">Asa Jernigan</h1>
     </div>
-
-    <a href="index.html">
-    <div class="hero-logo" id="heroLogo">
-      <svg id="Layer_1" data-name="Layer 1" viewBox="0 0 134.4 40" fill="currentColor" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+  
+    <!-- Center: SVG logo -->
+    <a href="index.html" class="logo-link" aria-label="Homepage">
+      <svg class="logo-svg" viewBox="0 0 134.4 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
         <g>
           <path class="cls-1" d="M45.49,6.18h0s3.62,17.04,3.62,17.04l2.52-12.48s-.74-3.04-1.09-4.55h-5.05Z" />
           <path class="cls-1" d="M58.77,6.18h0s-4.44,15.62-4.44,15.62v.02s0,.02-.01.03c0,0,0,.01-.01.02.01.01,0,.02,0,.02l-.23.79v.02l-.15.51-1.68,5.91h0s5.04,0,5.04,0l6.51-22.93c-1.68-.01-3.36-.01-5.03-.01Z" />
@@ -55,12 +80,68 @@
           <polygon class="cls-1" points="1.82 20.77 1.82 29.1 7.37 29.11 3.18 20.77 1.82 20.77" />
         </g>
       </svg>
-      </div>
     </a>
-
-    <nav class="header-nav">
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+  
+    <!-- Right: Navigation links and toggle -->
+    <nav class="topnav" role="navigation">
+      <div class="menu" id="menu">
+        <a href="/projects.html">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="menu"
+        aria-label="Toggle navigation"
+        onclick="toggleMenu()"
+      >
+        <i class="fa fa-bars"></i>
+      </button>
     </nav>
-  </header>  
-<!--END OF HEADER-->
+  </header>
+  
+
+
+    <!-- Main -->
+    <main>
+
+      <div class="hero-section-project">
+      <h1>Projects</h1>
+      </div>
+
+      <div class="project-container">
+
+        <div id="project-1">
+          <h2>The Story Tree</h2>
+        </div>
+
+        <div id="project-2">
+          <h2>HUH</h2>
+        </div>
+
+        <div id="project-3">
+          <h2>Anser</h2>
+        </div>
+        
+      </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Asa Jernigan. All rights reserved.</p>
+        <nav class="footer-links">
+          <a href="mailto:asajernigan1894@gmail.com">Email</a>
+          <a href="/projects.html">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+<script src="/script.js"></script>
+
+</body>
+
+</html>
