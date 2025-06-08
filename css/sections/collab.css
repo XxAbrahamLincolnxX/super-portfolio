@@ -35,9 +35,23 @@
 
 #collab p {
     font-size: 1.5em;
-    margin-left:auto;
-    margin-right: auto;
     line-height: 2em;
     padding-top: 2em;
     padding-bottom: 2em;
+}
+
+@media (max-width: 500px) {
+    #collab h2 {
+        font-size: 1.5em;
+    }
+
+    #collab p {
+        font-size: 1em;
+    }
+
+    #collab {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
 }
