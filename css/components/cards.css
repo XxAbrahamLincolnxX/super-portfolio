@@ -23,3 +23,88 @@
   transform: translateY(-6px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  align-content: end;
+}
+
+.project-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Example: Make the first card span 2 columns */
+#project-1 {
+  grid-column: 1 / -1;
+}
+
+.project-img {
+  display: flex;
+  justify-content: end;
+  margin-left: 5em;
+}
+
+.project-card .card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-grid p {
+  text-align: center;
+  font-size: 1.2em;
+  max-width: 70%;
+}
+
+.card-title {
+  font-size: 1.8em;
+  text-align: left;
+  grid-column: 1/ -1;
+}
+
+.client-tools {
+  font-size: 0.75em;
+  grid-column: 1 / -1;
+  grid-row-start: 4;
+}
+
+
+.explore-button {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  display: flex;
+  width: 200px;
+  height: 40px;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffd000;
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.explore-button:hover {
+  background-color: #a34c00;
+  transform: scale(1.03);
+}
